@@ -1,0 +1,74 @@
+.certifications {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+}
+
+.certifications h2 {
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: #029aff;
+  box-shadow: 0 8px 20px rgba(2, 154, 255, 0.25);
+}
+
+.cert-image img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-image img {
+  transform: scale(1.05);
+}
+
+.cert-info {
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.cert-info h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cert-info p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.cert-info span {
+  color: #029aff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}

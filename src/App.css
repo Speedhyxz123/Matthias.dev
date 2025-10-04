@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Títulos generales */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Secciones */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Título de sección */
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #029aff;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #029aff;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* Enlaces */
+a {
+  color: #029aff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Botones genéricos */
+button {
+  background-color: #029aff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Contenedor general */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Animaciones suaves */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #029aff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #029aff;
+}
+

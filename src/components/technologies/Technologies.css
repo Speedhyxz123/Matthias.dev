@@ -1,0 +1,57 @@
+.technologies {
+  background: transparent; /* fondo oscuro elegante */
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.technologies h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  color: #fff; /* 🔹 título en blanco */
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tech-card {
+  background: #1b1b1b;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 25px 10px;
+  transition: all 0.4s ease;
+  cursor: default;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.tech-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tech-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+}

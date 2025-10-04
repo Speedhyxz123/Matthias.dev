@@ -1,0 +1,113 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Imagen principal */
+.hero-image {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Botones */
+.hero-buttons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.hero-buttons.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.hero-buttons a {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, background 0.3s, color 0.3s;
+}
+
+.hero-buttons a:hover {
+  transform: scale(1.1);
+  background: #029aff;
+  color: #fff;
+}
+
+/* Texto debajo */
+.hero-info {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-info h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-info h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #029aff;
+  margin-top: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hero-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-buttons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .hero-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-info h2 {
+    font-size: 1rem;
+  }
+}
